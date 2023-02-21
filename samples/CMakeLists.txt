@@ -27,3 +27,5 @@
 add_executable(mlp_learning_an_image mlp_learning_an_image.cu ../dependencies/stbi/stbi_wrapper.cpp)
 target_link_libraries(mlp_learning_an_image PUBLIC ${CUDA_LIBRARIES} tiny-cuda-nn)
 
+add_executable(mlp_learning_a_noise mlp_learning_a_noise.cu)
+target_link_libraries(mlp_learning_a_noise PUBLIC ${CUDA_LIBRARIES} tiny-cuda-nn)
